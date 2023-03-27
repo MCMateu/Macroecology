@@ -1,0 +1,54 @@
+site_name: A Macroecology research site
+
+theme:
+
+  #MAIN THEME
+  name: material
+  
+  logo: dna.png
+  
+  #CHANGE FONT
+  font:
+    text: Roboto
+    code: Roboto Mono
+    
+  #TOP BAR COLOR
+  palette:
+ 
+  # Palette toggle for light mode
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+  # Palette toggle for dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  
+  #ADD NAVIGATIONS TABS  
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.path
+    - search.suggest
+    - navigation.footer
+    
+
+
+
+   
+
+nav:
+- Home: index.md
+- Tutorials:
+        - Synthetic-Communities.ipynb
+        - Nonequilibrium.ipynb
+
+
+plugins:
+  - mkdocs-jupyter
+  - search
